@@ -1,0 +1,20 @@
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Definição de gradiente -->
+  <defs>
+    <radialGradient id="gradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="lightblue" />
+      <stop offset="100%" stop-color="blue" />
+    </radialGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="4" stdDeviation="4" flood-color="rgba(0, 0, 0, 0.5)" />
+    </filter>
+  </defs>
+  
+  <!-- Círculo com gradiente e sombra -->
+  <circle cx="100" cy="100" r="90" fill="url(#gradient)" filter="url(#shadow)" />
+  
+  <!-- Texto "Eduardo" estilizado -->
+  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="28" font-family="Arial, sans-serif" font-weight="bold" filter="url(#shadow)">
+    Eduardo
+  </text>
+</svg>
